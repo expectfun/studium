@@ -1,0 +1,10 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "prompt": "A woman in a bright red dress walking through a crowded city street. Everyone around her wears identical dark grey suits.",
+    "image_size": "landscape_16_9",
+    "quality": "medium"
+  },
+  "seed": null,
+  "seconds": 27.489
+}

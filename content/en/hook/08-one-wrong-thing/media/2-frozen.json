@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "A realistic photograph of an ordinary city street on a rainy morning: people with umbrellas wait at a crosswalk, cars, wet asphalt, grey sky. Everything is completely normal except one impossible thing: the raindrops hang frozen in mid-air all over the street, motionless, like millions of tiny glass beads."
+  }
+}

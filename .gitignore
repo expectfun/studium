@@ -1,0 +1,15 @@
+.context/
+node_modules/
+dist/
+.astro/
+public/media/
+.DS_Store
+
+# Media stays out of Git for now (SPEC §9, open question); new workspaces copy it from the project root.
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.mp4
+*.mov

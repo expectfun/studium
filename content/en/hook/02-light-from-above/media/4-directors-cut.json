@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Film still on 35mm, heavy grain, warm amber tones. Low-key lighting: a single hard light from directly overhead, the source out of frame, on a middle-aged man in a dark suit sitting behind a heavy wooden desk in a dark, wood-paneled office, facing the camera. His eyes are hidden in the deep shadow of his brow; his face is unreadable. His hands are folded on the desk, fully lit. Low angle, the camera slightly below his eye level, so he looms over us. In the foreground, the back of an empty chair faces him across the desk, in silhouette. Everything outside the pool of light falls into near-black."
+  }
+}

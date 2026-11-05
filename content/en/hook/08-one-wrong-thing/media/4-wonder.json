@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "A realistic photograph: a huge grey boulder, the size of a house, floats motionless a few meters above a green meadow at golden hour. Children stand below it, laughing and pointing up, one of them reaching out a hand. Warm sunlight, wildflowers, a kite in the sky."
+  }
+}

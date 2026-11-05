@@ -1,0 +1,17 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "input": {
+    "prompt": "Static camera, locked off, the framing never changes. A dense, endless crowd of men in dark suits keeps hurrying down the street away from the camera the whole time, every one of them walking briskly, briefcases swinging; the crowd never stops moving. For the first two seconds there is only the crowd. Then @Element1, the woman in the emerald green dress, appears far down the street, walking out of the crowd toward the camera against the flow. She walks calmly at an unhurried, steady pace straight toward the lens, growing larger with every step, carrying the empty birdcage by its top ring at her side, arm relaxed. The wind lifts her long dark hair and the hem of her dress. She keeps looking straight into the lens. About two seconds before the end she walks past the camera and out of the frame, and for the last two seconds there is only the hurrying crowd again. One continuous shot, no cuts. Grainy black-and-white 35mm film look throughout; her emerald green dress stays vivid and is the only color.",
+    "start_image_url": ".context/landing/plate-1.png",
+    "elements": [
+      {
+        "frontal_image_url": ".context/landing/her.png",
+        "reference_image_urls": [
+          ".context/landing/still-1.png"
+        ]
+      }
+    ],
+    "duration": "10",
+    "generate_audio": false
+  }
+}

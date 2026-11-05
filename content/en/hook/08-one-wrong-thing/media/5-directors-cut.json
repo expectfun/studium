@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Film still on 35mm, visible grain, overcast morning. A dense crowd of commuters in dark coats hurries along a city sidewalk, heads down, looking at their phones. In the middle, one man in a grey suit has stopped walking. His briefcase hangs open at his side, and the sheets of paper inside are turning into white birds as they rise: near the case they are still flat pages, higher up they grow wings, and above the crowd they fly away as a flock. He watches them go with a small smile. No one else looks up."
+  }
+}

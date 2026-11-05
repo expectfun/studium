@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "A beautiful, mysterious, wise old woman with an interesting face, standing on a pier."
+  }
+}

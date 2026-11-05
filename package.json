@@ -1,0 +1,17 @@
+{
+  "name": "studium",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "media": "bun scripts/sync-media.ts",
+    "dev": "bun run media && astro dev",
+    "build": "bun run media && astro build --force",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "image-size": "^2.0.0",
+    "remark-directive": "^4.0.0",
+    "unist-util-visit": "^5.0.0"
+  }
+}

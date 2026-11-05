@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Extreme wide shot of a man walking through the desert under a clear sky: he is a tiny figure near the bottom of the frame. Beside him, an enormous ancient stone monolith rises out of the sand, hundreds of times his height, reaching almost to the top of the frame."
+  }
+}

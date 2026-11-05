@@ -1,0 +1,188 @@
+---
+import "../styles/site.css";
+import { t, url, type Locale, type CurriculumTopic } from "../lib/site";
+
+// `here` names the current page in the bar. On a lesson, `topic` and `at` make it a menu of the block's lessons.
+interface Props {
+  locale: Locale;
+  title?: string;
+  here?: string;
+  topic?: CurriculumTopic;
+  at?: number;
+}
+const { locale, title, here, topic, at = 0 } = Astro.props;
+const pad = (n: number) => String(n).padStart(2, "0");
+const pageTitle = title ? `${title} · ${t(locale, "site")}` : `${t(locale, "site")} · ${t(locale, "tagline")}`;
+---
+<!doctype html>
+<html lang={locale}>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{pageTitle}</title>
+  <meta name="description" content={t(locale, "tagline")}>
+  <script is:inline>
+    // Theme before first paint: an explicit choice wins, otherwise follow the system.
+    document.documentElement.dataset.theme =
+      localStorage.getItem("theme") ?? (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+  </script>
+</head>
+<body>
+  <header class="bar">
+    <a class="mark" href={url(`${locale}/`)}>{t(locale, "site")}</a>
+    {topic ? (
+      <details class="where">
+        <summary>
+          <span class="slash">/</span>{topic.title} · {t(locale, "position", { n: pad(at + 1), total: pad(topic.lessons.length) })}<span class="caret" aria-hidden="true">▾</span>
+        </summary>
+        <div class="menu">
+          <ol>
+            {topic.lessons.map((lesson, i) => (
+              <li class={lesson.href ? "" : "planned"}>
+                <span class="n">{pad(lesson.number)}</span>
+                {i === at ? <span aria-current="page">{lesson.title}</span>
+                  : lesson.href ? <a href={lesson.href}>{lesson.title}</a>
+                  : <span>{lesson.title}</span>}
+              </li>
+            ))}
+          </ol>
+          <a class="all" href={url(`${locale}/lessons/#${topic.id}`)}>{t(locale, "allLessons")} →</a>
+        </div>
+      </details>
+    ) : here ? (
+      <span class="where"><span class="slash">/</span>{here}</span>
+    ) : (
+      <a class="where" href={url(`${locale}/lessons/`)}>{t(locale, "allLessons")}</a>
+    )}
+    <span class="theme" aria-label="Theme">
+      <button type="button" data-theme-set="light">{t(locale, "light")}</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" data-theme-set="dark">{t(locale, "dark")}</button>
+    </span>
+  </header>
+  <slot />
+  <script define:vars={{ copy: t(locale, "copy"), copied: t(locale, "copied") }}>
+    // Theme switch.
+    const buttons = document.querySelectorAll("[data-theme-set]");
+    const mark = () => buttons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.themeSet === document.documentElement.dataset.theme)));
+    buttons.forEach((b) =>
+      b.addEventListener("click", () => {
+        document.documentElement.dataset.theme = b.dataset.themeSet;
+        localStorage.setItem("theme", b.dataset.themeSet);
+        mark();
+      }),
+    );
+    mark();
+
+    // Lesson menu in the bar: closes on Escape or a click outside it.
+    const where = document.querySelector("details.where");
+    if (where) {
+      document.addEventListener("click", (e) => { if (!where.contains(e.target)) where.open = false; });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && where.open) { where.open = false; where.querySelector("summary").focus(); }
+      });
+    }
+
+    // Ladders: one frame switched in place.
+    // Click the frame or ›, swipe, or press → for the next step (wrapping around); the strip jumps to any step.
+    // The first time a ladder comes into view it plays one full circle (00 → … → 00), unless reduced motion is on.
+    const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    for (const ladder of document.querySelectorAll(".ladder")) {
+      const thumbs = [...ladder.querySelectorAll(".thumbs [role=tab]")];
+      const frames = [...ladder.querySelectorAll(".frames > img, .frames > video")];
+      const prompts = [...ladder.querySelectorAll(".prompts .prompt")];
+      const play = ladder.querySelector(".play");
+      const n = thumbs.length;
+      let at = 0;
+      let timer = null;
+
+      const show = (i) => {
+        at = (i + n) % n;
+        thumbs.forEach((t, j) => t.setAttribute("aria-selected", String(at === j)));
+        frames.forEach((f, j) => f.classList.toggle("on", at === j));
+        prompts.forEach((p, j) => p.classList.toggle("on", at === j));
+      };
+      const stop = () => {
+        clearTimeout(timer);
+        timer = null;
+        play.textContent = play.dataset.play;
+      };
+      const circle = () => {
+        stop();
+        play.textContent = play.dataset.stop;
+        show(0);
+        const tick = (left) => {
+          timer = setTimeout(() => {
+            show(at + 1);
+            left > 1 ? tick(left - 1) : stop();
+          }, 2500);
+        };
+        tick(n);
+      };
+      // Any interaction by the reader takes over from the autoplay.
+      const by = (fn) => (e) => { stop(); fn(e); };
+
+      ladder.querySelector(".frames").addEventListener("click", by((e) => show(e.target.closest(".prev") ? at - 1 : at + 1)));
+      ladder.querySelector(".frames").addEventListener("keydown", by((e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(at + 1); }
+      }));
+      thumbs.forEach((t, i) => t.addEventListener("click", by(() => show(i))));
+      play.addEventListener("click", () => (timer ? stop() : circle()));
+
+      let startX = null;
+      let swiped = false;
+      ladder.querySelector(".frames").addEventListener("pointerdown", (e) => (startX = e.clientX));
+      ladder.querySelector(".frames").addEventListener("pointerup", (e) => {
+        const dx = startX === null ? 0 : e.clientX - startX;
+        startX = null;
+        if (Math.abs(dx) > 40) { stop(); show(dx < 0 ? at + 1 : at - 1); e.stopPropagation(); swiped = true; }
+      });
+      ladder.querySelector(".frames").addEventListener("click", (e) => {
+        if (swiped) { swiped = false; e.stopImmediatePropagation(); }
+      }, true);
+
+      document.addEventListener("keydown", (e) => {
+        if (e.target.closest?.("input, textarea")) return;
+        const box = ladder.getBoundingClientRect();
+        if (box.bottom < 0 || box.top > innerHeight) return;
+        if (e.key === "ArrowRight") { stop(); show(at + 1); }
+        if (e.key === "ArrowLeft") { stop(); show(at - 1); }
+      });
+
+      // Links in the prose (:goto) reach the ladder through this.
+      ladder.goTo = (i) => { stop(); show(i); };
+
+      if (!reduceMotion) {
+        const seen = new IntersectionObserver((entries) => {
+          if (!entries.some((e) => e.isIntersecting)) return;
+          seen.disconnect();
+          circle();
+        }, { threshold: 0.6 });
+        seen.observe(ladder.querySelector(".frames"));
+      }
+    }
+
+    // :goto links switch the nearest ladder above them, and bring it into view if it's off screen.
+    const ladders = [...document.querySelectorAll(".ladder")];
+    for (const link of document.querySelectorAll(".goto")) {
+      const ladder = ladders.findLast((l) => l.compareDocumentPosition(link) & Node.DOCUMENT_POSITION_FOLLOWING);
+      if (!ladder) continue;
+      link.addEventListener("click", () => {
+        ladder.goTo(Number(link.dataset.step));
+        const box = ladder.querySelector(".frames").getBoundingClientRect();
+        if (box.top < 0 || box.bottom > innerHeight)
+          ladder.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+      });
+    }
+
+    // Copy buttons on prompts.
+    for (const b of document.querySelectorAll(".prompt .copy")) {
+      b.addEventListener("click", async () => {
+        await navigator.clipboard.writeText(b.closest(".prompt").querySelector(".line").dataset.copy);
+        b.textContent = copied;
+        setTimeout(() => (b.textContent = copy), 1200);
+      });
+    }
+  </script>
+</body>
+</html>

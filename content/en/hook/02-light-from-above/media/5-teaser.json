@@ -1,0 +1,12 @@
+{
+  "model": "minimax/h3/image-to-video",
+  "input": {
+    "prompt": "Static camera, locked off. The lighting never changes: a single hard light directly overhead, no other light, no fill. The man sits still, his eyes hidden in shadow. Then he slowly leans his body forward over the desk toward the camera, and as his head moves forward under the overhead light, his eyes come out of the shadow, staring straight into the lens. He ends leaning forward, closer to us. The room stays near-black; the empty chair stays a silhouette in the foreground. One continuous shot, no cuts. Warm amber tones, heavy 35mm film grain.",
+    "image_url": ".context/l12/4-directors-cut.png",
+    "resolution": "768P",
+    "duration": 5
+  },
+  "source": "media/4-directors-cut.png",
+  "post": "ffmpeg: 0.5 s fade out, luma-only temporal film grain (noise=c0s=14:c0f=t+u)",
+  "original": "refs/lesson-1-2-teaser-raw.mp4"
+}

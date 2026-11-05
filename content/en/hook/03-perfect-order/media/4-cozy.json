@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Perfectly symmetrical one-point perspective shot of a long hotel hallway: the camera is at eye level, looking straight down the middle. The walls, doors and wall lamps on the left mirror the ones on the right exactly, and every line runs toward a single vanishing point at the far end. A woman stands in the exact center of the frame, facing the camera straight on. Soft warm daylight, pastel pink walls and a mint-green carpet; she smiles slightly, holding a small wrapped gift in both hands."
+  }
+}

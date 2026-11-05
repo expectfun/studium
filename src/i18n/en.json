@@ -1,0 +1,22 @@
+{
+  "site": "Studium",
+  "tagline": "Learning to direct AI, not just prompt it.",
+  "intro": "I'm figuring this out as I go, maybe a step or two ahead. Each short lesson borrows one idea from film and tries it with AI to see what changes. I pick and check everything here by hand. Come along and explore it with me.",
+  "start": "Try the first lesson",
+  "allLessons": "All lessons",
+  "lessons": "Lessons",
+  "position": "{n} / {total}",
+  "minutes": "{n} min",
+  "coming": "Coming",
+  "comingSoon": "Coming soon",
+  "inHook": "In the Hook",
+  "next": "Next",
+  "previous": "Previous",
+  "light": "Light",
+  "dark": "Dark",
+  "prompt": "Prompt",
+  "copy": "Copy",
+  "copied": "Copied",
+  "play": "Play",
+  "stop": "Stop"
+}

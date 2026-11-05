@@ -1,0 +1,9 @@
+{
+  "model": "minimax-h3 (image-to-video)",
+  "source": "generated manually by the author from 4-directors-cut.png",
+  "input": {
+    "prompt": "Medium-wide shot. The woman keeps walking calmly toward the camera at an unhurried pace, holding the empty birdcage at her side, its open door swinging gently with each step. The crowd of men in dark suits keeps hurrying past her and away from the camera, briefcases swinging. A steady wind keeps lifting her long hair and the hem of her red dress throughout the shot. The camera slowly dollies backward at her walking speed, so she stays the same size and her whole figure, including the birdcage, stays in frame. She keeps looking straight into the lens the whole time. One continuous shot, no cuts. Grainy black-and-white 35mm film look throughout; the red dress stays the only color."
+  },
+  "post": "ffmpeg: trimmed to 4.2 s, 0.5 s fade out, luma-only temporal film grain (noise=c0s=14:c0f=t+u)",
+  "original": "refs/ygwdZgs9OZT30CRvgKWiw_minimax-h3.mp4"
+}

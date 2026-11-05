@@ -1,0 +1,210 @@
+{
+  "topics": [
+    {
+      "id": "hook",
+      "title": "The Hook",
+      "lede": "Eight quick techniques with an immediate, visible effect. Each one is a different thing you control: color, light, order, distance, lens, medium, who's in the frame, and the impossible.",
+      "lessons": [
+        { "slug": "01-make-one-thing-pop", "title": "Make one thing pop", "axis": "Color" },
+        { "slug": "02-light-from-above", "title": "Light from above", "axis": "Light" },
+        { "slug": "03-perfect-order", "title": "Perfect order", "axis": "Composition" },
+        { "slug": "04-small-in-a-big-world", "title": "Small in a big world", "axis": "Camera" },
+        { "slug": "05-bend-the-world", "title": "Bend the world", "axis": "Lens" },
+        { "slug": "06-not-a-render", "title": "Not a render", "axis": "Medium" },
+        { "slug": "07-someone-not-anyone", "title": "Someone, not anyone", "axis": "Subject" },
+        { "slug": "08-one-wrong-thing", "title": "One wrong thing", "axis": "The impossible" }
+      ]
+    },
+    {
+      "id": "color",
+      "title": "Color",
+      "coming": true,
+      "lede": "Where the eye goes, and how it feels when it gets there. From one accent to a palette that carries meaning.",
+      "lessons": [
+        { "slug": "01-make-one-thing-pop", "title": "Make one thing pop", "axis": "One accent", "from": "hook/01-make-one-thing-pop" },
+        { "slug": "02-only-two-colors", "title": "Only two colors", "axis": "Restricted palette" },
+        { "slug": "03-opposites", "title": "Opposites", "axis": "Complementary colors" },
+        { "slug": "04-warm-or-cold", "title": "Warm or cold", "axis": "Color temperature" },
+        { "slug": "05-turn-it-down", "title": "Turn it down", "axis": "Saturation" },
+        { "slug": "06-a-color-that-means-something", "title": "A color that means something", "axis": "Color motif" }
+      ]
+    },
+    {
+      "id": "light",
+      "title": "Light",
+      "coming": true,
+      "lede": "What you show and what you hide. The direction, quality and time of light, and the air it travels through.",
+      "lessons": [
+        { "slug": "01-light-from-above", "title": "Light from above", "axis": "Top light", "from": "hook/02-light-from-above" },
+        { "slug": "02-hard-or-soft", "title": "Hard or soft", "axis": "Light quality" },
+        { "slug": "03-half-in-shadow", "title": "Half in shadow", "axis": "Side light, chiaroscuro" },
+        { "slug": "04-only-the-outline", "title": "Only the outline", "axis": "Backlight, silhouette" },
+        { "slug": "05-the-hour-matters", "title": "The hour matters", "axis": "Time of day" },
+        { "slug": "06-light-from-inside", "title": "Light from inside", "axis": "Practical light" },
+        { "slug": "07-light-you-can-see", "title": "Light you can see", "axis": "Atmosphere" }
+      ]
+    },
+    {
+      "id": "composition",
+      "title": "Composition",
+      "coming": true,
+      "lede": "Where things sit in the frame, and where the eye travels. Order, space, lines and depth.",
+      "lessons": [
+        { "slug": "01-perfect-order", "title": "Perfect order", "axis": "Symmetry", "from": "hook/03-perfect-order" },
+        { "slug": "02-room-to-breathe", "title": "Room to breathe", "axis": "Off-center, negative space" },
+        { "slug": "03-follow-the-line", "title": "Follow the line", "axis": "Leading lines" },
+        { "slug": "04-a-frame-in-the-frame", "title": "A frame in the frame", "axis": "Frame within a frame" },
+        { "slug": "05-near-and-far", "title": "Near and far", "axis": "Foreground, depth" },
+        { "slug": "06-break-the-pattern", "title": "Break the pattern", "axis": "Pattern and interruption" }
+      ]
+    },
+    {
+      "id": "camera",
+      "title": "Camera",
+      "coming": true,
+      "lede": "Where the camera stands: how close, how high, and whose eyes we see through.",
+      "lessons": [
+        { "slug": "01-small-in-a-big-world", "title": "Small in a big world", "axis": "Extreme wide", "from": "hook/04-small-in-a-big-world" },
+        { "slug": "02-how-close", "title": "How close", "axis": "Shot sizes" },
+        { "slug": "03-only-the-eyes", "title": "Only the eyes", "axis": "Extreme close-up" },
+        { "slug": "04-look-up-look-down", "title": "Look up, look down", "axis": "Low and high angle" },
+        { "slug": "05-from-above", "title": "From above", "axis": "Bird's-eye, top-down" },
+        { "slug": "06-tilt-the-world", "title": "Tilt the world", "axis": "Dutch angle" },
+        { "slug": "07-whose-eyes", "title": "Whose eyes", "axis": "POV, over-the-shoulder" }
+      ]
+    },
+    {
+      "id": "lens",
+      "title": "Lens",
+      "coming": true,
+      "lede": "What the glass does to the world: stretching, squashing, blurring, glowing.",
+      "lessons": [
+        { "slug": "01-bend-the-world", "title": "Bend the world", "axis": "Fisheye", "from": "hook/05-bend-the-world" },
+        { "slug": "02-stretch-or-squash", "title": "Stretch or squash", "axis": "Wide vs. telephoto" },
+        { "slug": "03-whats-in-focus", "title": "What's in focus", "axis": "Shallow vs. deep focus" },
+        { "slug": "04-a-tiny-world", "title": "A tiny world", "axis": "Macro, tilt-shift" },
+        { "slug": "05-the-glass-shows", "title": "The glass shows", "axis": "Flare, anamorphic" }
+      ]
+    },
+    {
+      "id": "medium",
+      "title": "Medium & material",
+      "coming": true,
+      "lede": "What the image is made of: film, paper, clay, paint. Each material brings its own mood, and it's a choice, not a filter.",
+      "lessons": [
+        { "slug": "01-not-a-render", "title": "Not a render", "axis": "Medium", "from": "hook/06-not-a-render" },
+        { "slug": "02-which-film", "title": "Which film", "axis": "Film stocks" },
+        { "slug": "03-back-in-time", "title": "Back in time", "axis": "Formats and eras" },
+        { "slug": "04-shaped-by-hand", "title": "Shaped by hand", "axis": "Clay, puppets" },
+        { "slug": "05-cut-and-layered", "title": "Cut and layered", "axis": "Paper cutout, silhouettes" },
+        { "slug": "06-drawn", "title": "Drawn", "axis": "Hand-drawn, cel animation" },
+        { "slug": "07-paint-that-moves", "title": "Paint that moves", "axis": "Painterly animation" }
+      ]
+    },
+    {
+      "id": "subject",
+      "title": "Subject & character",
+      "coming": true,
+      "lede": "Who is in the frame, and what they tell us without a word: shape, pose, gaze, the things they carry.",
+      "lessons": [
+        { "slug": "01-someone-not-anyone", "title": "Someone, not anyone", "axis": "Specific subject", "from": "hook/07-someone-not-anyone" },
+        { "slug": "02-known-by-the-shape", "title": "Known by the shape", "axis": "Silhouette, costume" },
+        { "slug": "03-the-pose-decides", "title": "The pose decides", "axis": "Pose and gaze" },
+        { "slug": "04-things-that-tell", "title": "Things that tell", "axis": "Props" },
+        { "slug": "05-two-in-a-frame", "title": "Two in a frame", "axis": "Relationships" }
+      ]
+    },
+    {
+      "id": "impossible",
+      "title": "The impossible",
+      "coming": true,
+      "lede": "Breaking reality on purpose. One impossible thing, in a real world, that means something.",
+      "lessons": [
+        { "slug": "01-one-wrong-thing", "title": "One wrong thing", "axis": "Grounded surrealism", "from": "hook/08-one-wrong-thing" },
+        { "slug": "02-wrong-size", "title": "Wrong size", "axis": "Scale swaps" },
+        { "slug": "03-wrong-material", "title": "Wrong material", "axis": "Material swaps" },
+        { "slug": "04-gravity-forgot", "title": "Gravity forgot", "axis": "Impossible physics" },
+        { "slug": "05-dont-belong-together", "title": "Don't belong together", "axis": "Juxtaposition" },
+        { "slug": "06-the-everyday-made-strange", "title": "The everyday made strange", "axis": "The uncanny" }
+      ]
+    },
+    {
+      "id": "place",
+      "title": "Place & world",
+      "coming": true,
+      "lede": "Somewhere, not anywhere. The same rule as for people, applied to the world around them.",
+      "lessons": [
+        { "slug": "01-somewhere-not-anywhere", "title": "Somewhere, not anywhere", "axis": "Specific place" },
+        { "slug": "02-when-is-it", "title": "When is it", "axis": "Era" },
+        { "slug": "03-weather-as-mood", "title": "Weather as mood", "axis": "Weather, season" },
+        { "slug": "04-lived-in", "title": "Lived in", "axis": "Texture and wear" },
+        { "slug": "05-a-world-with-rules", "title": "A world with rules", "axis": "Worldbuilding" }
+      ]
+    },
+    {
+      "id": "style",
+      "title": "Style & references",
+      "coming": true,
+      "lede": "Learning from the masters without copying them. Taking a style apart into the choices behind it.",
+      "lessons": [
+        { "slug": "01-take-it-apart", "title": "Take it apart", "axis": "Deconstructing a style" },
+        { "slug": "02-borrow-one-thing", "title": "Borrow one thing", "axis": "One choice from a master" },
+        { "slug": "03-two-masters", "title": "Two masters", "axis": "Mixing references" },
+        { "slug": "04-not-a-copy", "title": "Not a copy", "axis": "Beyond imitation" }
+      ]
+    },
+    {
+      "id": "vision",
+      "title": "Vision",
+      "coming": true,
+      "lede": "Everything together, your way. The stills capstone: intent first, every detail serving it.",
+      "lessons": [
+        { "slug": "01-intent-first", "title": "Intent first", "axis": "Intent" },
+        { "slug": "02-same-brief-your-way", "title": "Same brief, your way", "axis": "Your version" },
+        { "slug": "03-every-detail-serves", "title": "Every detail serves", "axis": "Coherence" },
+        { "slug": "04-your-shot", "title": "Your shot", "axis": "Capstone" }
+      ]
+    },
+    {
+      "id": "movement",
+      "title": "Camera movement",
+      "coming": true,
+      "lede": "From still to motion. How the camera moves, and what each move makes you feel.",
+      "lessons": [
+        { "slug": "01-from-still-to-motion", "title": "From still to motion", "axis": "Image to video" },
+        { "slug": "02-push-in-pull-back", "title": "Push in, pull back", "axis": "Dolly" },
+        { "slug": "03-follow-them", "title": "Follow them", "axis": "Tracking shot" },
+        { "slug": "04-turn-and-reveal", "title": "Turn and reveal", "axis": "Pan, tilt" },
+        { "slug": "05-steady-or-shaky", "title": "Steady or shaky", "axis": "Handheld vs. steady" },
+        { "slug": "06-vertigo", "title": "Vertigo", "axis": "Dolly zoom" },
+        { "slug": "07-motion-made-by-hand", "title": "Motion made by hand", "axis": "Stop-motion timing" }
+      ]
+    },
+    {
+      "id": "time",
+      "title": "Time & pacing",
+      "coming": true,
+      "lede": "Slowing down, holding still, and choosing the moment. Time as something you direct.",
+      "lessons": [
+        { "slug": "01-slow-it-down", "title": "Slow it down", "axis": "Slow motion" },
+        { "slug": "02-hold-the-shot", "title": "Hold the shot", "axis": "Long take, stillness" },
+        { "slug": "03-the-moment-before", "title": "The moment before", "axis": "Anticipation" },
+        { "slug": "04-light-that-changes", "title": "Light that changes", "axis": "Changing light" },
+        { "slug": "05-around-again", "title": "Around again", "axis": "Seamless loops" }
+      ]
+    },
+    {
+      "id": "sequences",
+      "title": "Sequences & storytelling",
+      "coming": true,
+      "lede": "From one shot to a story. Cuts, coverage, and keeping the same world from shot to shot.",
+      "lessons": [
+        { "slug": "01-two-shots", "title": "Two shots", "axis": "The cut" },
+        { "slug": "02-wide-then-close", "title": "Wide, then close", "axis": "Establishing to detail" },
+        { "slug": "03-shot-reverse-shot", "title": "Shot, reverse shot", "axis": "Dialogue coverage" },
+        { "slug": "04-the-same-person", "title": "The same person", "axis": "Continuity" },
+        { "slug": "05-a-story-in-five-shots", "title": "A story in five shots", "axis": "Mini sequence" }
+      ]
+    }
+  ]
+}

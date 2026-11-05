@@ -1,0 +1,10 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "prompt": "A woman in a dress walking through a crowded city street.",
+    "image_size": "landscape_16_9",
+    "quality": "medium"
+  },
+  "seed": null,
+  "seconds": 30.227
+}

@@ -1,0 +1,34 @@
+---
+import Base from "../../layouts/Base.astro";
+import { curriculum, locales, t, type Locale } from "../../lib/site";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const topics = await curriculum(locale);
+---
+<Base locale={locale} title={t(locale, "allLessons")} here={t(locale, "allLessons")}>
+  <main class="column">
+    {topics.map((topic) => (
+      <section id={topic.id}>
+        <div class="kicker">{t(locale, "lessons")}</div>
+        <h1>{topic.title}</h1>
+        {topic.coming && <p class="subtitle">{t(locale, "comingSoon")}</p>}
+        <p class="intro">{topic.lede}</p>
+        <ol class="toc">
+          {topic.lessons.map((lesson) => (
+            <li class={lesson.href ? "" : "planned"}>
+              <span class="n">{String(lesson.number).padStart(2, "0")}</span>
+              {lesson.href ? <a href={lesson.href}>{lesson.title}</a> : <span>{lesson.title}</span>}
+              <span class="meta">
+                {lesson.axis} · {lesson.from && lesson.entry ? t(locale, "inHook") : lesson.entry ? t(locale, "minutes", { n: lesson.entry.data.minutes }) : t(locale, "coming")}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </main>
+</Base>

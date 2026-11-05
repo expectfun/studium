@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "A realistic photograph: a huge grey boulder, the size of a house, floats motionless above the roofs of a small town at dusk. Its shadow falls across the houses. People hurry indoors, a woman pulls a child by the hand, shutters are being closed. Cold blue light, a single streetlight flickering on."
+  }
+}

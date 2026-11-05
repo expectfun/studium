@@ -1,0 +1,6 @@
+[workspace]
+setup_commands = [
+  # Media is gitignored (SPEC §9), so copy it from the project root, the checkout that owns the .git folder.
+  "rsync -a --prune-empty-dirs --exclude='node_modules/' --exclude='dist/' --exclude='.context/' --exclude='public/media/' --include='*/' --include='*.png' --include='*.jpg' --include='*.jpeg' --include='*.webp' --include='*.gif' --include='*.mp4' --include='*.mov' --exclude='*' \"$(git rev-parse --path-format=absolute --git-common-dir)/../\" ./",
+  "bun install --frozen-lockfile",
+]

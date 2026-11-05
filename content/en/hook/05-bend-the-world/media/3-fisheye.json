@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Fisheye lens shot from very close, the whole image bulging in a round, curved frame: a girl eating ice cream on a city street leans toward the camera, her face and the ice cream huge in the center, the street and the buildings behind her bending around her in a curve."
+  }
+}

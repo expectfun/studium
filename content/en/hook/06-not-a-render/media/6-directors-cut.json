@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Silhouette paper cutout animation, like a 1920s shadow-puppet fairy tale: everything is cut from black paper with intricate lace-like detail, set against glowing layered backgrounds of tinted translucent paper, deep blue fading to amber at the horizon. A tiny fisherman stands in a curled little boat on a lake of rippling paper waves, pulling a net out of the water; caught in the net is a glowing crescent moon. The sky above him is empty, no moon. Visible paper texture, delicate cut edges, soft light glowing through the paper layers."
+  }
+}

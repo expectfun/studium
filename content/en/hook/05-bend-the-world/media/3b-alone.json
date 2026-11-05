@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Fisheye lens shot, the whole image bulging in a round, curved frame: a girl stands alone in the middle of a vast, empty marble palace hall at night, small in the center of the frame, holding an ice cream. The walls, columns and painted ceiling curve over her like a dome closing in. Cold candlelight; she glances back over her shoulder."
+  }
+}

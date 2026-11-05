@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Photograph on 35mm film, visible grain, natural light: a fisherman in a small boat on a lake at dawn."
+  }
+}

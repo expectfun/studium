@@ -1,0 +1,34 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../../layouts/Base.astro";
+import { curriculum, type Locale } from "../../../lib/site";
+
+export async function getStaticPaths() {
+  const lessons = await getCollection("lessons");
+  return lessons.map((entry) => {
+    const [locale, topic, lesson] = entry.id.split("/");
+    return { params: { locale, topic, lesson }, props: { entry } };
+  });
+}
+
+const { entry } = Astro.props;
+const locale = Astro.params.locale as Locale;
+const topic = (await curriculum(locale)).find((tp) => tp.id === Astro.params.topic)!;
+const at = topic.lessons.findIndex((l) => l.slug === Astro.params.lesson);
+const total = topic.lessons.length;
+const previous = topic.lessons.slice(0, at).findLast((l) => l.href);
+const next = topic.lessons.slice(at + 1).find((l) => l.href);
+const { Content } = await render(entry);
+---
+<Base locale={locale} title={entry.data.title} topic={topic} at={at}>
+  <main class="column">
+    <h1>{entry.data.title}</h1>
+    <article>
+      <Content />
+    </article>
+    <nav class="next">
+      {previous ? <a href={previous.href}>← {previous.number} · {previous.title}</a> : <span />}
+      {next ? <a href={next.href}>{next.number} · {next.title} →</a> : <span>{at + 1} / {total}</span>}
+    </nav>
+  </main>
+</Base>

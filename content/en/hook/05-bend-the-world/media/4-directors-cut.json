@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Shot on 16mm film, visible grain, warm late-afternoon summer sun. Fisheye lens from very low and very close: a teenage girl on a bicycle leans into a turn right over the camera, grinning at the lens, one hand off the handlebars holding a dripping ice-cream cone, her front wheel huge in the foreground. Behind her the whole suburban street curves up and around like a bowl: houses, a row of tall palm trees bending inward, a lawn sprinkler throwing an arc of water that catches the sun. Her two friends on bikes chase behind her, small and far."
+  }
+}

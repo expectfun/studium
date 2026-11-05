@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Film still on 35mm, visible grain, cold grey dawn, thin fog over the harbor. A 70-year-old fisherwoman sits alone on an upturned crate on a wooden pier, mending a fishing net spread across her knees. Yellow oilskin coat patched at both elbows with mismatched fabric, hands red and cracked from salt. She wears her own thin gold wedding ring, and a man's wider ring hangs on a string around her neck. Beside her on the planks: an old thermos and two tin cups, one filled and steaming, the other clean and empty. Behind her, her small wooden fishing boat, a man's name hand-painted on the bow: TOMÁS. She isn't looking at the camera; she looks out at the sea."
+  }
+}

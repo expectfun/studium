@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "A 70-year-old fisherwoman standing on a wooden pier, in a yellow oilskin coat and rubber boots, a coil of wet rope over her shoulder, her hands red and cracked from salt and cold. The coat is patched at both elbows with mismatched fabric, a thin gold wedding ring is worn almost flat on her finger, and her small wooden boat is tied up behind her."
+  }
+}

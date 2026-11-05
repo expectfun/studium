@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Wide-angle lens shot from very close: a girl eating ice cream on a city street leans toward the camera, her face and the ice cream big in the foreground, the street stretching away small behind her."
+  }
+}

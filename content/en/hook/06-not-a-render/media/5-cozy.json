@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Stop-motion claymation: a round, cheerful fisherman with a big nose and a knitted hat sits in a small boat on a lake at dawn, pouring tea from a flask, a fish peeking out of a bucket beside him. Everything is sculpted from plasticine on a handmade miniature set: visible fingerprints in the clay, bright warm colors, soft golden light."
+  }
+}

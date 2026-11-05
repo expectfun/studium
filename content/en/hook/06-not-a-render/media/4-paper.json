@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Paper cutout animation: a fisherman in a small boat on a lake at dawn. Everything is cut from layered colored paper: the waves are overlapping strips of paper, the sun is a paper circle, visible paper grain and torn edges, soft shadows between the layers."
+  }
+}

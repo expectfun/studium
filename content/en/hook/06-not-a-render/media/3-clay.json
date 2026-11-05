@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Stop-motion claymation: a fisherman in a small boat on a lake at dawn. Everything is sculpted from plasticine on a handmade miniature set: visible fingerprints and tool marks in the clay, the water made of glossy sculpted clay ripples, the sky a painted backdrop."
+  }
+}

@@ -1,0 +1,211 @@
+/* The screening room: the site is the neutral room around the work.
+   The UI has no color of its own; every hue on the page comes from an image. See SPEC §11. */
+
+@font-face { font-family: "Newsreader"; font-style: normal; font-weight: 200 800; font-display: swap; src: url("../assets/fonts/newsreader.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-style: italic; font-weight: 200 800; font-display: swap; src: url("../assets/fonts/newsreader-italic.woff2") format("woff2"); }
+@font-face { font-family: "Courier Prime"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/courier-prime-400.woff2") format("woff2"); }
+@font-face { font-family: "Courier Prime"; font-style: italic; font-weight: 400; font-display: swap; src: url("../assets/fonts/courier-prime-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Courier Prime"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/courier-prime-700.woff2") format("woff2"); }
+
+:root {
+  --serif: "Newsreader", Georgia, serif;
+  --mono: "Courier Prime", "Courier New", monospace;
+  --text-col: 36rem;
+  --wide-col: 64rem;
+  --gutter: 1.5rem;
+  /* Same in both themes, so switching changes only colors, never layout. */
+  --stage-pad: 2.5rem;
+}
+
+/* Dark: warm-neutral dark everywhere; images sit on the page itself. */
+[data-theme="dark"] {
+  --bg: #171615;
+  --text: #e6e1d8;
+  --muted: #8d877d;
+  --rule: #2f2d2a;
+  --stage: #171615;
+  --stage-text: #e6e1d8;
+  --stage-muted: #8d877d;
+  color-scheme: dark;
+}
+
+/* Light: paper for reading; images always sit on a dark-grey band. */
+[data-theme="light"] {
+  --bg: #f3f0e9;
+  --text: #1d1c1a;
+  --muted: #77726a;
+  --rule: #d9d4ca;
+  --stage: #2b2b2a;
+  --stage-text: #ebe8e2;
+  --stage-muted: #9a978f;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--text); }
+body {
+  margin: 0;
+  font: 400 1.1875rem/1.6 var(--serif);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+
+.mono, .bar, .kicker, figcaption, .prompt .copy, .strip, .next, .toc .meta {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Top bar: wordmark, where you are (on a lesson, a menu of its block), theme. */
+.bar {
+  display: flex; align-items: baseline; gap: 1.5rem;
+  max-width: var(--wide-col); margin: 0 auto; padding: 1.5rem var(--gutter) 0;
+  color: var(--muted);
+}
+.bar a { text-decoration: none; }
+.bar a:hover { color: var(--text); }
+.bar .mark { color: var(--text); letter-spacing: 0.18em; }
+.bar .slash { margin-right: 1.5rem; color: var(--muted); }
+.bar .where { position: relative; color: var(--text); }
+.bar summary { list-style: none; cursor: pointer; }
+.bar summary::-webkit-details-marker { display: none; }
+.bar .caret { color: var(--muted); margin-left: 0.5em; }
+.bar summary:hover .caret, .bar [open] .caret { color: var(--text); }
+.bar .menu {
+  position: absolute; z-index: 10; top: calc(100% + 0.75rem); left: 0;
+  width: max-content; max-width: calc(100vw - 2 * var(--gutter));
+  padding: 0.25rem 1rem 0.75rem; background: var(--bg); border: 1px solid var(--rule);
+}
+.bar .menu ol { list-style: none; padding: 0; margin: 0 0 0.5rem; }
+.bar .menu li { display: grid; grid-template-columns: 2.25rem 1fr; margin: 0; padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
+.bar .menu .n, .bar .menu .planned { color: var(--muted); }
+.bar .menu a:hover { text-decoration: underline; text-underline-offset: 0.3em; }
+.bar .menu [aria-current] { text-decoration: underline; text-underline-offset: 0.3em; }
+.bar .menu .all { display: block; padding-top: 0.5rem; color: var(--muted); }
+.bar .theme { margin-left: auto; display: flex; gap: 0.5rem; }
+.bar .theme button { color: var(--muted); letter-spacing: inherit; text-transform: inherit; }
+.bar .theme button:hover { color: var(--text); }
+.bar .theme button[aria-pressed="true"] { color: var(--text); text-decoration: underline; text-underline-offset: 0.3em; }
+
+/* Reading column; figures and stages break out of it. */
+.column { max-width: calc(var(--text-col) + 2 * var(--gutter)); margin: 0 auto; padding: 0 var(--gutter); }
+main { padding-bottom: 6rem; }
+
+.kicker { color: var(--muted); margin: 5rem 0 1.25rem; }
+main > h1:first-child { margin-top: 5rem; }
+h1 { font-weight: 400; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 2.5rem; }
+h2 { font-weight: 400; font-style: italic; font-size: 1.75rem; line-height: 1.2; margin: 4.5rem 0 1rem; }
+p { margin: 0 0 1.1em; }
+strong { font-weight: 600; }
+ol, ul { padding-left: 1.4rem; margin: 0 0 1.2em; }
+li { margin-bottom: 0.35em; }
+
+/* A stage spans the viewport; its figure is centered and as wide as the wide column. */
+.stage {
+  background: var(--stage); color: var(--stage-text);
+  margin: 2.5rem calc(50% - 50vw); padding: var(--stage-pad) var(--gutter);
+}
+figure { max-width: var(--wide-col); margin: 0 auto; }
+figure img, figure video { display: block; width: auto; max-width: 100%; height: auto; max-height: 78vh; margin: 0 auto; }
+figcaption { display: flex; justify-content: space-between; gap: 1rem; margin-top: 0.6rem; color: var(--stage-muted); font-size: 0.75rem; }
+
+/* Prompts read like lines of a script. */
+.prompt { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: baseline; margin: 1.5rem 0 2rem; }
+.prompt .copy { color: var(--muted); font-size: 0.75rem; text-decoration: underline; text-underline-offset: 0.3em; }
+.prompt .copy:hover { color: var(--text); }
+.prompt .line { font: 400 1.0625rem/1.55 var(--mono); padding-left: 2.5rem; margin: 0; }
+
+/* The ladder: one frame, steps switched in place, with a contact strip of every step below it.
+   Click the frame (or ›, swipe, →) for the next step. Nothing outside the stage changes. */
+.ladder .frames { display: grid; position: relative; cursor: pointer; user-select: none; touch-action: pan-y; }
+.ladder .frames:focus-visible { outline: 1px solid var(--stage-text); outline-offset: 4px; }
+.ladder .frames > img, .ladder .frames > video { grid-area: 1 / 1; opacity: 0; transition: opacity 0.35s linear; }
+.ladder .frames > .on { opacity: 1; }
+.ladder .arrow {
+  position: absolute; top: 0; bottom: 0; width: 12%; display: flex; align-items: center;
+  font: 400 2.5rem/1 var(--mono); color: #fff; text-shadow: 0 0 12px rgb(0 0 0 / 0.6);
+  opacity: 0.55; transition: opacity 0.15s linear;
+}
+.ladder .arrow.prev { left: 0; justify-content: flex-start; padding-left: 0.75rem; }
+.ladder .arrow.next { right: 0; justify-content: flex-end; padding-right: 0.75rem; }
+.ladder .frames:hover .arrow { opacity: 0.85; }
+.ladder .arrow:hover { opacity: 1 !important; }
+.ladder .strip { display: flex; justify-content: space-between; align-items: flex-end; gap: 1.5rem; margin-top: 1.5rem; font-size: 0.75rem; color: var(--stage-muted); }
+.ladder .thumbs { display: flex; gap: 0.75rem; flex: 1; min-width: 0; }
+.ladder .meta { display: flex; gap: 1.25rem; white-space: nowrap; }
+.ladder .play { color: var(--stage-muted); letter-spacing: inherit; text-transform: inherit; text-decoration: underline; text-underline-offset: 0.3em; }
+.ladder .play:hover { color: var(--stage-text); }
+.ladder .thumbs button { flex: 0 1 11rem; min-width: 0; text-align: left; color: var(--stage-muted); letter-spacing: inherit; text-transform: inherit; font-size: 0.75rem; }
+.ladder .thumbs img { display: block; width: 100%; height: auto; opacity: 0.45; outline: 1px solid transparent; outline-offset: 3px; transition: opacity 0.15s linear; }
+.ladder .thumbs span { display: block; margin-top: 0.5rem; }
+.ladder .thumbs button:hover img { opacity: 0.8; }
+.ladder .thumbs button[aria-selected="true"] { color: var(--stage-text); }
+.ladder .thumbs button[aria-selected="true"] img { opacity: 1; outline-color: var(--stage-text); }
+/* The step's prompt is the frame's caption. All prompts share one grid cell, so the strip below never moves. */
+.ladder .prompts { display: grid; margin-top: 1.25rem; }
+.ladder .prompts .prompt { grid-area: 1 / 1; margin: 0; visibility: hidden; }
+.ladder .prompts .prompt.on { visibility: visible; }
+.stage .prompt .copy { color: var(--stage-muted); }
+.stage .prompt .copy:hover { color: var(--stage-text); }
+.stage .prompt .line { padding-left: 0; max-width: 48rem; color: var(--stage-text); }
+.prompt .same { color: var(--stage-muted); }
+
+/* :goto links in the prose switch the ladder above. */
+.goto { font-family: var(--mono); font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: underline; text-underline-offset: 0.3em; margin-right: 0.35em; }
+.goto:hover { text-decoration-thickness: 2px; }
+
+/* Blockquotes are a director's note: in the margin on wide screens, inline otherwise. */
+blockquote { margin: 1.5rem 0; padding: 0.75rem 0 0; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9375rem; line-height: 1.45; }
+blockquote strong { color: var(--text); font-weight: 500; }
+blockquote p { margin: 0 0 0.5em; }
+@media (min-width: 76rem) {
+  blockquote { float: right; clear: right; width: 13rem; margin: 0.25rem -16rem 1rem 0; }
+}
+
+/* Plain-text boxes for "try it" notes. */
+.try { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 1rem 0; margin: 1.75rem 0; font-size: 1rem; color: var(--muted); }
+.try p { margin: 0; }
+.try strong { color: var(--text); font-weight: 500; }
+
+/* Lesson navigation. */
+.next { margin-top: 6rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); }
+.next a { color: var(--text); text-decoration: none; }
+.next a:hover { text-decoration: underline; }
+
+/* Landing. */
+/* Sized so the tagline is visible without scrolling; uncropped, never wider than the wide column. */
+.hero { margin: 3rem calc(50% - 50vw) 0; padding: 0 var(--gutter); }
+.hero video { display: block; width: auto; max-width: min(100%, var(--wide-col)); height: auto; max-height: 52vh; margin: 0 auto; }
+.tagline { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.1; margin: 2.5rem 0 1.5rem; }
+.intro { color: var(--muted); font-size: 1.25rem; }
+.links { display: flex; gap: 2rem; margin-top: 2rem; }
+.links a { font-family: var(--mono); font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
+.links a:first-child { text-decoration: underline; text-underline-offset: 0.35em; }
+
+/* Lesson list. */
+.toc { list-style: none; padding: 0; margin: 2rem 0 0; border-top: 1px solid var(--rule); }
+.toc li { display: grid; grid-template-columns: 2.5rem 1fr auto; gap: 1rem; align-items: baseline; padding: 0.9rem 0; border-bottom: 1px solid var(--rule); margin: 0; }
+.toc .n, .toc .meta { color: var(--muted); }
+.toc .n { font-family: var(--mono); font-size: 0.8125rem; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.toc .planned { color: var(--muted); }
+.subtitle { font-family: var(--mono); font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: -0.5rem 0 1.25rem; }
+
+@media (max-width: 40rem) {
+  body { font-size: 1.0625rem; }
+  /* The menu spans the bar instead of hanging off the title, so it fits a phone. */
+  .bar { flex-wrap: wrap; gap: 0.75rem 1rem; position: relative; }
+  .bar .slash { margin-right: 1rem; }
+  .bar .where { position: static; }
+  .bar .menu { left: var(--gutter); right: var(--gutter); width: auto; max-width: none; top: calc(100% + 0.5rem); }
+  .prompt .line { padding-left: 1rem; }
+  .ladder .strip { flex-wrap: wrap; }
+  .toc li { grid-template-columns: 2rem 1fr; }
+  .toc .meta { grid-column: 2; }
+}

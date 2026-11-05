@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Film still on 35mm, visible grain, warm hazy morning light. Extreme wide shot: a tiny lone figure in a long dark coat walks along the crest of a dune toward the rusted hull of a colossal ocean ship stranded in the middle of the desert, half-buried in sand, hundreds of times his height, its bow fading into the haze. A single line of footprints trails behind him across the dunes. Wind lifts a thin veil of sand off the crest. No sea anywhere in sight. The figure is the only living thing in the frame."
+  }
+}

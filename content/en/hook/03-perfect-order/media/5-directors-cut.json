@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Film still on 35mm, visible grain. Perfectly symmetrical one-point perspective shot of a long, empty grand hotel hallway, the camera at eye level looking straight down the middle: identical doors, identical brass wall lamps and a patterned carpet mirror each other left and right, every line running to a single vanishing point at the far end. A young bellhop in a crimson uniform stands at attention in the exact center of the frame, holding a silver room-service tray with one covered dish, looking straight into the lens. Every door is closed except one on the left, which stands slightly ajar, warm light spilling out across the carpet. Soft, even, slightly cold light."
+  }
+}

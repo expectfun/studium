@@ -1,0 +1,24 @@
+---
+import Base from "../../layouts/Base.astro";
+import { curriculum, locales, t, url, type Locale } from "../../lib/site";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const [first] = (await curriculum(locale))[0].lessons;
+---
+<Base locale={locale}>
+  <main class="column">
+    <div class="hero">
+      <video src={url("landing/loop.mp4")} autoplay muted loop playsinline aria-label="A woman in a green dress with an empty birdcage walks out of a crowd in dark suits, toward the camera"></video>
+    </div>
+    <p class="tagline">{t(locale, "tagline")}</p>
+    <p class="intro">{t(locale, "intro")}</p>
+    <div class="links">
+      {first.href && <a href={first.href}>{t(locale, "start")} →</a>}
+      <a href={url(`${locale}/lessons/`)}>{t(locale, "allLessons")}</a>
+    </div>
+  </main>
+</Base>

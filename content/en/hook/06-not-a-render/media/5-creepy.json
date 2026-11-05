@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "Stop-motion puppet animation: a tall, thin, pale fisherman with long spindly fingers stands motionless in a small boat on a black, perfectly still lake at night, staring down into the water. Handmade miniature set, puppet with fabric clothes and a carved face, cold moonlight, thin fog, muted grey-green colors, the water dark and glassy."
+  }
+}

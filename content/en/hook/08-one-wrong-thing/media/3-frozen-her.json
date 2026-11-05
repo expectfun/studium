@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "A realistic photograph of an ordinary city street on a rainy morning: people with umbrellas wait at a crosswalk, cars, wet asphalt, grey sky, and the rain pours down on all of them as usual. Everything is completely normal except one impossible thing: in a small circle around one young woman standing still in the middle of the crowd without an umbrella, holding an opened letter, the raindrops hang frozen in mid-air, motionless, like tiny glass beads. Outside that circle, the rain keeps falling."
+  }
+}

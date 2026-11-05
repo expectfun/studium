@@ -1,0 +1,8 @@
+{
+  "model": "openai/gpt-image-2",
+  "input": {
+    "image_size": "landscape_16_9",
+    "quality": "medium",
+    "prompt": "A man sitting at a desk in a dark office, facing the camera, lit by a single hard light from directly overhead, the source out of frame. Low-key lighting: the room falls into deep shadow and his eyes are hidden in the shadow of his brow."
+  }
+}

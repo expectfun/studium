@@ -1,0 +1,11 @@
+{
+  "model": "minimax/h3/image-to-video",
+  "input": {
+    "prompt": "The camera slowly rises and pulls back, revealing more and more of the endless desert and the full length of the stranded ship, while the man keeps walking along the dune crest toward it, growing smaller. Wind keeps lifting a thin veil of sand off the crest. The ship does not move. The light and haze never change. One continuous shot, no cuts. Warm hazy morning light, visible 35mm film grain.",
+    "image_url": "media/4-directors-cut.png",
+    "resolution": "768P",
+    "duration": 5
+  },
+  "post": "ffmpeg: 0.5 s fade out, luma-only temporal film grain (noise=c0s=12:c0f=t+u)",
+  "original": "refs/lesson-1-3-teaser-raw.mp4"
+}
