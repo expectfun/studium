@@ -92,11 +92,7 @@ Pick something small and something big. A cat in an empty stadium, a lighthouse 
 2. **Prompt it.** Start with the default. Then make your subject small. Then decide: emptiness, or something huge?
 3. **Compare** your three images.
 
-<div class="try">
-
-**Try it in any image generator.** The built-in generator is coming. Until then, [arena.ai](https://arena.ai) has a small free daily quota.
-
-</div>
+::generator
 
 **Check your result:**
 - Can you still find your subject in a second? If not, does it stand out enough (color, contrast, position)?

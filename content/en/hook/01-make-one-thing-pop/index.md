@@ -81,11 +81,7 @@ Pick your own subject. It doesn't have to be a person or a street. A yellow umbr
 2. **Prompt it.** Start with the default, then add contrast, then try selective color.
 3. **Compare** your result with your own default.
 
-<div class="try">
-
-**Try it in any image generator.** The built-in generator is coming. Until then, [arena.ai](https://arena.ai) has a small free daily quota.
-
-</div>
+::generator
 
 **Check your result:**
 - Where does your eye land first? Is it the thing you wanted?

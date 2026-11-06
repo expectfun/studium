@@ -55,7 +55,10 @@ function soleImage(node) {
   return meaningful.length === 1 && meaningful[0].type === "image" ? meaningful[0] : null;
 }
 
-export default function remarkLesson({ base = "/" } = {}) {
+// A UI string with [text](url) links, as HTML.
+const withLinks = (s) => escape(s).replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+
+export default function remarkLesson({ base = "/", generator = "" } = {}) {
   return async (tree, file) => {
     const lessonDir = dirname(resolve(file.path ?? ""));
     const [locale, topic, lesson] = relative(contentRoot, lessonDir).split("/");
@@ -149,6 +152,36 @@ export default function remarkLesson({ base = "/" } = {}) {
     visit(tree, "textDirective", (node) => {
       if (node.name !== "goto") return;
       node.data = { hName: "button", hProperties: { type: "button", className: ["goto"], dataStep: node.attributes?.step ?? "0" } };
+    });
+
+    // The "Your turn" box. Without an invite code it only points to an external tool.
+    visit(tree, "leafDirective", (node, index, parent) => {
+      if (node.name !== "generator") return;
+      const strings = Object.fromEntries(
+        ["imagesLeft", "generating", "unlocking", "unlock", "offline", "copy", "copied"].map((k) => [k, ui[k]]),
+      );
+      const unlock = generator
+        ? `<form class="unlock"><label for="invite-${lesson}">${escape(ui.inviteAsk)}</label>` +
+          `<span class="row"><input id="invite-${lesson}" name="code" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="${escape(ui.invitePlaceholder)}">` +
+          `<button type="submit">${escape(ui.unlock)}</button></span><span class="error" role="alert"></span></form>`
+        : "";
+      const tool = generator
+        ? `<div class="tool" hidden>` +
+          `<form class="compose"><label class="mono" for="prompt-${lesson}">${escape(ui.yourPrompt)}</label>` +
+          `<textarea id="prompt-${lesson}" name="prompt" rows="4" placeholder="${escape(ui.promptPlaceholder)}"></textarea>` +
+          `<span class="row"><button type="submit">${escape(ui.generate)}</button><span class="status" aria-live="polite"></span>` +
+          `<span class="left"></span><button type="button" class="forget">${escape(ui.forgetCode)}</button></span>` +
+          `<span class="error" role="alert"></span></form>` +
+          `<div class="stage results" hidden><figure><div class="frame"></div>` +
+          `<div class="prompts"></div>` +
+          `<div class="strip"><div class="thumbs" role="tablist" aria-label="${escape(ui.yourResults)}"></div></div></figure></div></div>`
+        : "";
+      parent.children[index] = {
+        type: "html",
+        value:
+          `<section class="try generator" data-api="${escape(generator)}" data-lesson="${escape(`${topic}/${lesson}`)}" data-ui="${escape(JSON.stringify(strings))}">` +
+          `<p class="elsewhere">${withLinks(ui.tryElsewhere)}</p>${unlock}${tool}</section>`,
+      };
     });
 
     // Standalone images and videos.

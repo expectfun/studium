@@ -97,11 +97,7 @@ Pick something you can get very close to: a dog sniffing the lens, a kid with a 
 2. **Prompt it.** Start with the default. Then switch to a wide angle, up close. Then go full fisheye.
 3. **Move the camera back** with the same lens, and see how the mood flips.
 
-<div class="try">
-
-**Try it in any image generator.** The built-in generator is coming. Until then, [arena.ai](https://arena.ai) has a small free daily quota.
-
-</div>
+::generator
 
 **Check your result:**
 - Which lines curve? Do they curve around your subject, or away from it?

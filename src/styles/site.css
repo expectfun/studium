@@ -172,6 +172,51 @@ blockquote p { margin: 0 0 0.5em; }
 .try p { margin: 0; }
 .try strong { color: var(--text); font-weight: 500; }
 
+/* The built-in generator inside "Your turn": plain fields on rules, results on a stage like the lesson's own frames. */
+.generator [hidden] { display: none !important; }
+.generator .unlock { margin-top: 0.75rem; }
+.generator .row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.75rem 1.25rem; margin-top: 0.6rem; }
+.generator input, .generator textarea {
+  font: 400 1.0625rem/1.55 var(--mono); color: var(--text); background: transparent;
+  border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; padding: 0.35rem 0;
+}
+.generator input { width: 12rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.generator textarea { display: block; width: 100%; resize: vertical; margin-top: 0.5rem; }
+.generator input:focus, .generator textarea:focus { outline: none; border-bottom-color: var(--text); }
+.generator input::placeholder, .generator textarea::placeholder { color: var(--muted); text-transform: none; letter-spacing: 0; }
+.generator .compose label { color: var(--muted); }
+.generator button[type="submit"], .generator .forget {
+  font-family: var(--mono); font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase;
+  text-decoration: underline; text-underline-offset: 0.3em;
+}
+.generator button[type="submit"] { color: var(--text); }
+.generator button[type="submit"]:disabled { color: var(--muted); cursor: default; }
+.generator .status, .generator .left, .generator .forget { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.generator .status:empty { display: none; }
+.generator .forget { margin-left: auto; font-size: 0.75rem; }
+.generator .forget:hover { color: var(--text); }
+.generator .error { display: block; margin-top: 0.5rem; color: var(--text); }
+.generator .error:empty { display: none; }
+.generator .results { margin-top: 1.5rem; margin-bottom: 0; }
+.generator .frame img, .generator .wait { display: block; width: auto; max-width: 100%; height: auto; max-height: 78vh; margin: 0 auto; }
+.generator .wait {
+  width: min(100%, 1088px); aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--stage-muted); color: var(--stage-muted); padding: 1rem; text-align: center;
+  font-family: var(--mono); font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.generator .wait.failed { text-transform: none; letter-spacing: 0; font-size: 1rem; color: var(--stage-text); }
+.generator .prompts { margin-top: 1.25rem; }
+.generator .prompts .prompt { margin: 0; }
+.generator .strip { margin-top: 1.5rem; }
+.generator .thumbs { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.generator .thumbs button { flex: 0 0 7rem; text-align: left; color: var(--stage-muted); font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.06em; }
+.generator .thumbs img, .generator .thumbs .blank { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; opacity: 0.45; outline: 1px solid transparent; outline-offset: 3px; }
+.generator .thumbs .blank { border: 1px solid var(--stage-muted); }
+.generator .thumbs span:last-child { display: block; margin-top: 0.4rem; }
+.generator .thumbs button:hover img { opacity: 0.8; }
+.generator .thumbs button[aria-selected="true"] { color: var(--stage-text); }
+.generator .thumbs button[aria-selected="true"] img, .generator .thumbs button[aria-selected="true"] .blank { opacity: 1; outline-color: var(--stage-text); }
+
 /* Lesson navigation. */
 .next { margin-top: 6rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); }
 .next a { color: var(--text); text-decoration: none; }

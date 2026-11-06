@@ -124,11 +124,7 @@ Find a place with a natural center line: a corridor, a road, a bridge, a church 
 2. **Prompt it.** Start with the default. Then put your subject dead center. Then make the whole frame mirror itself.
 3. **Add one sentence** of light and color, and see which way it tips the mood.
 
-<div class="try">
-
-**Try it in any image generator.** The built-in generator is coming. Until then, [arena.ai](https://arena.ai) has a small free daily quota.
-
-</div>
+::generator
 
 **Check your result:**
 - Fold the image in half in your head. Do the two sides match?

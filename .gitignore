@@ -4,6 +4,8 @@ dist/
 .astro/
 public/media/
 .DS_Store
+.wrangler/
+.dev.vars
 
 # Raw generation sources are large; new workspaces copy them from the project root (SPEC §9).
 refs/**/*.mp4

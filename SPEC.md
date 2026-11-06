@@ -384,6 +384,9 @@ Goal: **don't commit to paid hosting early.** Run a free prototype for the autho
 - Nothing to install, nothing to sign.
 - It becomes the seed of the real backend later (accounts, credits, Telegram).
 
+🟡 **Built (Nov 2026), in `worker/`:** Hono on Workers with D1 (`worker/schema.sql`). An invite code is ten characters; `bun codes.ts add|list|cap|revoke` manages them. Each image is charged at submit (atomically, so parallel requests can't overspend) and refunded if fal reports a failure; at most 2 pending per code. GPT Image 2, medium quality, 16:9, WebP. The charge is a flat **$0.10 per image** (fal bills this model by tokens and reports $0.10 as its average per call), so the default $3 cap is ~30 images; lower `PRICE_MILLS` once fal's dashboard shows the real cost. Results are fal.media URLs, kept per code and lesson, so they show on any device.
+- **In the lessons:** `::generator` in "Your turn" renders the box (`src/scripts/generator.ts`). Without a code it points to arena.ai and asks for an invite code; with one, it shows a prompt field, images left, and the reader's own results for that lesson on a stage (newest first, prompt as caption). The site only shows the code field when built with `GENERATOR_URL` (a repository variable in the Pages workflow).
+
 **Fallback (if the Worker route fails for some reason): Tauri desktop app** wrapping the PWA and distributed privately to friends. Considered and parked, because:
 - the API key would ship inside the binary (fixable only with a revocable key per friend)
 - unsigned apps trigger Gatekeeper/SmartScreen warnings, signing costs money, and builds are needed for each OS
@@ -572,4 +575,4 @@ Problem: many AI-generated sites look generic and alike, which is exactly what w
 4. **Image preview.** Improve how images are shown: the ladder viewer, enlarging an image, comparing steps side by side, mobile.
 5. **Iterating on details.** Ongoing small fixes across copy, layout and media that come up while using the site.
 6. **Static version on GitHub Pages.** Build and deploy the lessons as a static site (no generator; practice through an external tool). The build already supports a sub-path via `BASE`. Before publishing: media sizes (e.g. the landing loop), and the film-stills rights question (§4).
-7. **MVP with the generator, for friends.** Implement and deploy the version with the built-in generator (§5, §6): a backend that holds the API key, spend limits, and access for a small group of friends.
+7. **MVP with the generator, for friends.** 🟡 Built and tested locally (§5): the Worker, invite codes with caps, and the generator in every lesson. Left: deploy the Worker, set `GENERATOR_URL`, hand out codes. Later: keep images beyond fal.media's retention (e.g. R2), "save to lesson" for the author.

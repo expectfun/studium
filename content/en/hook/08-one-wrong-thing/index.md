@@ -122,11 +122,7 @@ Pick an ordinary moment: a kitchen in the morning, a bus stop, an office at 5 p.
 2. **Prompt it.** First make the scene completely real and ordinary. Then add *one* impossible thing that shows that feeling.
 3. **Test it**: tell someone what the impossible thing means in one sentence. If you can't, change the thing, not the prompt.
 
-<div class="try">
-
-**Try it in any image generator.** The built-in generator is coming. Until then, [arena.ai](https://arena.ai) has a small free daily quota.
-
-</div>
+::generator
 
 **Check your result:**
 - How many impossible things are there? If more than one, which one can you remove?

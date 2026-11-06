@@ -31,4 +31,5 @@ const { Content } = await render(entry);
       {next ? <a href={next.href}>{next.number} · {next.title} →</a> : <span>{at + 1} / {total}</span>}
     </nav>
   </main>
+  <script>import "../../../scripts/generator.ts";</script>
 </Base>

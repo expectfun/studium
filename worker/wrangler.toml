@@ -1,0 +1,18 @@
+# The generator's backend: a thin proxy to fal.ai with invite codes and spending caps (SPEC §5).
+# The fal key is a secret: `bunx wrangler secret put FAL_KEY` (locally: FAL_KEY in worker/.dev.vars).
+name = "studium"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+[vars]
+# Sites allowed to call the Worker, comma-separated.
+ALLOWED_ORIGINS = "https://expectfun.github.io,http://localhost:4321"
+MODEL = "openai/gpt-image-2"
+MODEL_INPUT = '{"image_size":"landscape_16_9","quality":"medium","output_format":"webp"}'
+# Charged per image against a code's cap. fal bills GPT Image 2 by tokens; $0.10 is its average per call.
+PRICE_MILLS = "100"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "studium"
+database_id = "REPLACE_AFTER_wrangler_d1_create"

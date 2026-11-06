@@ -90,11 +90,7 @@ Pick a subject of your own: a person, an animal, an object. A cat on a windowsil
 2. **Prompt it.** Start with the default. Then move the light above. Then let the dark in.
 3. **Try one pose change**, and see how the story changes under the same light.
 
-<div class="try">
-
-**Try it in any image generator.** The built-in generator is coming. Until then, [arena.ai](https://arena.ai) has a small free daily quota.
-
-</div>
+::generator
 
 **Check your result:**
 - What's hidden in your image? Is that what you wanted to hide?

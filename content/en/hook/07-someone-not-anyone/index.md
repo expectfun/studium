@@ -103,11 +103,7 @@ Pick someone ordinary: a bus driver, a night-shift nurse, a boy selling lemonade
 2. **Prompt it.** Start with the default. Then write three adjectives and see what you get. Then delete them and describe only what you could point at.
 3. **Add one detail with a history**: something worn, repaired, or kept.
 
-<div class="try">
-
-**Try it in any image generator.** The built-in generator is coming. Until then, [arena.ai](https://arena.ai) has a small free daily quota.
-
-</div>
+::generator
 
 **Check your result:**
 - Could you point at every word of your prompt in the picture?

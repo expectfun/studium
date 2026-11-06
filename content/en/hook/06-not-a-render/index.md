@@ -136,11 +136,7 @@ Pick a simple scene: a cat on a windowsill, a bus stop in the rain, a girl flyin
 2. **Prompt it.** Start with the default. Then add one material at a time: 35mm, clay, paper.
 3. **Pick the one that fits your intent**, then push it: cozy clay or creepy clay?
 
-<div class="try">
-
-**Try it in any image generator.** The built-in generator is coming. Until then, [arena.ai](https://arena.ai) has a small free daily quota.
-
-</div>
+::generator
 
 **Check your result:**
 - Can you see what it's made of? Grain, fingerprints, paper edges?

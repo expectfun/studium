@@ -18,5 +18,18 @@
   "copy": "Copy",
   "copied": "Copied",
   "play": "Play",
-  "stop": "Stop"
+  "stop": "Stop",
+  "tryElsewhere": "Try it in any image generator. [arena.ai](https://arena.ai) has a small free daily quota.",
+  "inviteAsk": "Have an invite code? Generate right here.",
+  "invitePlaceholder": "Invite code",
+  "unlock": "Unlock",
+  "unlocking": "Checking…",
+  "yourPrompt": "Your prompt",
+  "promptPlaceholder": "Start with the lazy version of your idea, then direct it.",
+  "generate": "Generate",
+  "generating": "Generating · {time}",
+  "imagesLeft": "{n} images left",
+  "forgetCode": "Forget code",
+  "yourResults": "Your results",
+  "offline": "Can't reach the generator. Check your connection and try again."
 }

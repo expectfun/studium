@@ -25,6 +25,8 @@ jobs:
       - run: bun run build
         env:
           BASE: /${{ github.event.repository.name }}/
+          # The Worker behind the built-in generator (worker/), a repository variable. Unset: lessons point to an external tool.
+          GENERATOR_URL: ${{ vars.GENERATOR_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
