@@ -3,6 +3,9 @@
 name = "studium"
 main = "src/index.ts"
 compatibility_date = "2026-11-01"
+# Served at https://studium.expectfun.workers.dev; no per-version preview URLs.
+workers_dev = true
+preview_urls = false
 
 [vars]
 # Sites allowed to call the Worker, comma-separated.
@@ -15,4 +18,4 @@ PRICE_MILLS = "100"
 [[d1_databases]]
 binding = "DB"
 database_name = "studium"
-database_id = "REPLACE_AFTER_wrangler_d1_create"
+database_id = "aaae1eba-fa8a-4e46-923a-c0092d8acc83"
