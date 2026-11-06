@@ -496,7 +496,7 @@ Not decided yet. The first version uses the allowlist on web and Stars on Telegr
 | Storage (when needed) | **Cloudflare D1 / KV**: invite codes, usage, later users and credits |
 | Generation | **fal.ai** |
 | Styling | ✅ One hand-written stylesheet (`src/styles/site.css`) with theme variables. Tailwind dropped: the design is a small set of deliberate rules, and utility classes would add little. |
-| Version control | 🟡 **Git, code and text only.** Images and video (`*.png`, `*.jpg`, `*.mp4`, …) are gitignored for now; new workspaces copy them from the project root (`happy.toml` setup command). Generation records (`*.json`, prompt `*.txt`) are tracked. Open question below. |
+| Version control | ✅ **Git, with site media.** Lesson and landing media are committed and kept small: images as WebP (generated) or JPG (film stills), at most 1920 px wide; videos as H.264 without audio (~1 MB per teaser). Only raw video sources in `refs/` are gitignored; new workspaces copy them from the project root (`happy.toml` setup command). Generation records (`*.json`, prompt `*.txt`) are tracked. |
 | Lesson markup | Markdown + `remark-directive` + a custom remark plugin (`src/lib/remark-lesson.mjs`): ` ```prompt ` blocks, `::::ladder` / `:::step{label}`, captioned figures from each file's generation record |
 
 The old MVP's code (Next.js) isn't carried over. Lesson content and ideas may be reused.
@@ -562,7 +562,7 @@ Problem: many AI-generated sites look generic and alike, which is exactly what w
 - Hook finale: a 9th lesson, a closing page, or part of lesson 8? (§4)
 - Film-language topics vs production-pipeline track (Idea → Script → Storyboard)? (§4)
 - fal.ai: multiple revocable keys / spend limits / browser CORS? (only matters for the parked no-backend option, §5)
-- Media in Git? Images and video (~280 MB) are kept out for now, so they aren't versioned and media made in a workspace must be copied back to the project root by hand. Options: commit them, Git LFS, or external storage. Must be settled before the GitHub Pages deploy, which builds from the repository. (§9)
+- Teaser film grain? The grain added in post made each teaser ~10x larger (10–20 MB), so the teasers ship without it for now. Options: a light re-encode with grain (~5–9 MB each), or a grain overlay on the site. (§9)
 
 ### To deal with later (site and content polish)
 

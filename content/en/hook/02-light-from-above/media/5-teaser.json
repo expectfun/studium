@@ -6,7 +6,7 @@
     "resolution": "768P",
     "duration": 5
   },
-  "source": "media/4-directors-cut.png",
-  "post": "ffmpeg: 0.5 s fade out, luma-only temporal film grain (noise=c0s=14:c0f=t+u)",
+  "source": "media/4-directors-cut.webp",
+  "post": "ffmpeg: 0.5 s fade out, no audio, H.264 CRF 23 (film grain left out for now, it made the file ~10x larger)",
   "original": "refs/lesson-1-2-teaser-raw.mp4"
 }

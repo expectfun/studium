@@ -47,7 +47,7 @@ Click the image to step through, or pick a frame below. Only the prompt changes.
 A woman standing in a hotel hallway.
 ```
 
-![The default: a smiling woman leaning against the wall, the hallway off to the side](media/1-lazy.png)
+![The default: a smiling woman leaning against the wall, the hallway off to the side](media/1-lazy.webp)
 :::
 
 :::step{label="Centered"}
@@ -55,7 +55,7 @@ A woman standing in a hotel hallway.
 A woman standing in a hotel hallway, in the exact center of the frame, facing the camera straight on.
 ```
 
-![Centered: she stands in the middle of the hallway, facing us](media/2-centered.png)
+![Centered: she stands in the middle of the hallway, facing us](media/2-centered.webp)
 :::
 
 :::step{label="Symmetry"}
@@ -63,7 +63,7 @@ A woman standing in a hotel hallway, in the exact center of the frame, facing th
 Perfectly symmetrical one-point perspective shot of a long hotel hallway: the camera is at eye level, looking straight down the middle. The walls, doors and wall lamps on the left mirror the ones on the right exactly, and every line runs toward a single vanishing point at the far end. A woman stands in the exact center of the frame, facing the camera straight on.
 ```
 
-![Full symmetry: the hallway mirrors itself, every line runs to one point behind her](media/3-symmetry.png)
+![Full symmetry: the hallway mirrors itself, every line runs to one point behind her](media/3-symmetry.webp)
 :::
 ::::
 
@@ -86,7 +86,7 @@ Same prompt, same composition. We added one sentence each time: the light, the c
 Perfectly symmetrical one-point perspective shot of a long hotel hallway: the camera is at eye level, looking straight down the middle. The walls, doors and wall lamps on the left mirror the ones on the right exactly, and every line runs toward a single vanishing point at the far end. A woman stands in the exact center of the frame, facing the camera straight on. Soft warm daylight, pastel pink walls and a mint-green carpet; she smiles slightly, holding a small wrapped gift in both hands.
 ```
 
-![Cozy: pastel pink and mint, she holds a small gift](media/4-cozy.png)
+![Cozy: pastel pink and mint, she holds a small gift](media/4-cozy.webp)
 :::
 
 :::step{label="Creepy"}
@@ -94,7 +94,7 @@ Perfectly symmetrical one-point perspective shot of a long hotel hallway: the ca
 Perfectly symmetrical one-point perspective shot of a long hotel hallway: the camera is at eye level, looking straight down the middle. The walls, doors and wall lamps on the left mirror the ones on the right exactly, and every line runs toward a single vanishing point at the far end. A woman stands in the exact center of the frame, facing the camera straight on. Dim, cold light; the hallway stretches far into darkness behind her, the carpet is a dark repeating geometric pattern; she stands perfectly still, arms at her sides, staring into the lens without expression.
 ```
 
-![Creepy: a dark endless corridor, she stares at us without expression](media/4-creepy.png)
+![Creepy: a dark endless corridor, she stares at us without expression](media/4-creepy.webp)
 :::
 ::::
 
@@ -143,7 +143,7 @@ Every addition serves one idea: *everything here is perfect, and one thing is ou
 Film still on 35mm, visible grain. Perfectly symmetrical one-point perspective shot of a long, empty grand hotel hallway, the camera at eye level looking straight down the middle: identical doors, identical brass wall lamps and a patterned carpet mirror each other left and right, every line running to a single vanishing point at the far end. A young bellhop in a crimson uniform stands at attention in the exact center of the frame, holding a silver room-service tray with one covered dish, looking straight into the lens. Every door is closed except one on the left, which stands slightly ajar, warm light spilling out across the carpet. Soft, even, slightly cold light.
 ```
 
-![Director's cut: a bellhop with a covered tray in a perfectly symmetrical corridor, one door open](media/5-directors-cut.png)
+![Director's cut: a bellhop with a covered tray in a perfectly symmetrical corridor, one door open](media/5-directors-cut.webp)
 
 What each addition does:
 
@@ -155,7 +155,7 @@ What each addition does:
 
 ## Where this is heading
 
-<!-- TODO: video teaser, image-to-video from media/5-directors-cut.png. Idea: locked-off camera, perfect symmetry held; nothing moves except the open door, which slowly swings a little wider, or the light inside it flickers. The bellhop doesn't blink. Generate after the still is approved. -->
+<!-- TODO: video teaser, image-to-video from media/5-directors-cut.webp. Idea: locked-off camera, perfect symmetry held; nothing moves except the open door, which slowly swings a little wider, or the light inside it flickers. The bellhop doesn't blink. Generate after the still is approved. -->
 
 In a still, the symmetry is perfect. In a video, you can hold it perfectly still, and then let one small thing move.
 

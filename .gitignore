@@ -5,11 +5,6 @@ dist/
 public/media/
 .DS_Store
 
-# Media stays out of Git for now (SPEC §9, open question); new workspaces copy it from the project root.
-*.png
-*.jpg
-*.jpeg
-*.webp
-*.gif
-*.mp4
-*.mov
+# Raw generation sources are large; new workspaces copy them from the project root (SPEC §9).
+refs/**/*.mp4
+refs/**/*.mov

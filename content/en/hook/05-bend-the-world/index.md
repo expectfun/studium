@@ -42,7 +42,7 @@ Click the image to step through, or pick a frame below. Only the prompt changes.
 A girl eating ice cream on a city street.
 ```
 
-![The default: a girl with an ice cream on a street, a pleasant stock photo](media/1-lazy.png)
+![The default: a girl with an ice cream on a street, a pleasant stock photo](media/1-lazy.webp)
 :::
 
 :::step{label="Wide angle up close"}
@@ -50,7 +50,7 @@ A girl eating ice cream on a city street.
 Wide-angle lens shot from very close: a girl eating ice cream on a city street leans toward the camera, her face and the ice cream big in the foreground, the street stretching away small behind her.
 ```
 
-![Wide angle up close: her face and the ice cream huge, the street tiny behind her](media/2-wide.png)
+![Wide angle up close: her face and the ice cream huge, the street tiny behind her](media/2-wide.webp)
 :::
 
 :::step{label="Fisheye"}
@@ -58,7 +58,7 @@ Wide-angle lens shot from very close: a girl eating ice cream on a city street l
 Fisheye lens shot from very close, the whole image bulging in a round, curved frame: a girl eating ice cream on a city street leans toward the camera, her face and the ice cream huge in the center, the street and the buildings behind her bending around her in a curve.
 ```
 
-![Fisheye: the street and the buildings curve around her face](media/3-fisheye.png)
+![Fisheye: the street and the buildings curve around her face](media/3-fisheye.webp)
 :::
 ::::
 
@@ -75,7 +75,7 @@ Fisheye lens shot from very close, the whole image bulging in a round, curved fr
 
 Same lens. We moved her away from the camera, put her alone in a huge, empty hall, and turned the light cold.
 
-![Same fisheye: she stands alone in a vast palace hall that curves over her](media/3b-alone.png)
+![Same fisheye: she stands alone in a vast palace hall that curves over her](media/3b-alone.webp)
 
 The fun is gone. Up close, the fisheye was a party: it pulled her toward us. From far away, the same curve closes the room over her like a dome. She's small, and the walls seem to lean in.
 
@@ -116,7 +116,7 @@ Every addition serves one idea: *the best day of summer, and nothing can stop he
 Shot on 16mm film, visible grain, warm late-afternoon summer sun. Fisheye lens from very low and very close: a teenage girl on a bicycle leans into a turn right over the camera, grinning at the lens, one hand off the handlebars holding a dripping ice-cream cone, her front wheel huge in the foreground. Behind her the whole suburban street curves up and around like a bowl: houses, a row of tall palm trees bending inward, a lawn sprinkler throwing an arc of water that catches the sun. Her two friends on bikes chase behind her, small and far.
 ```
 
-![Director's cut: a girl on a bike with a dripping ice cream, palm trees bending around her](media/4-directors-cut.png)
+![Director's cut: a girl on a bike with a dripping ice cream, palm trees bending around her](media/4-directors-cut.webp)
 
 What each addition does:
 
@@ -128,7 +128,7 @@ What each addition does:
 
 ## Where this is heading
 
-<!-- TODO: video teaser, image-to-video from media/4-directors-cut.png. Idea: the camera rides alongside her, low to the ground; she sweeps past the lens, the curved street rolls by, the sprinkler arc glitters, her friends catch up. Generate after the still is approved. -->
+<!-- TODO: video teaser, image-to-video from media/4-directors-cut.webp. Idea: the camera rides alongside her, low to the ground; she sweeps past the lens, the curved street rolls by, the sprinkler arc glitters, her friends catch up. Generate after the still is approved. -->
 
 In a still, the street is curved. In a video, a fisheye that moves makes the whole world roll around you. That's why skate videos love it.
 

@@ -50,7 +50,7 @@ Click the image to step through, or pick a frame below. Only the prompt changes.
 A fisherman in a small boat on a lake at dawn.
 ```
 
-![The default: a glossy sunrise postcard](media/1-lazy.png)
+![The default: a glossy sunrise postcard](media/1-lazy.webp)
 :::
 
 :::step{label="35mm film"}
@@ -58,7 +58,7 @@ A fisherman in a small boat on a lake at dawn.
 Photograph on 35mm film, visible grain, natural light: a fisherman in a small boat on a lake at dawn.
 ```
 
-![35mm film: a weathered man in misty grey light](media/2-film.png)
+![35mm film: a weathered man in misty grey light](media/2-film.webp)
 :::
 
 :::step{label="Clay"}
@@ -66,7 +66,7 @@ Photograph on 35mm film, visible grain, natural light: a fisherman in a small bo
 Stop-motion claymation: a fisherman in a small boat on a lake at dawn. Everything is sculpted from plasticine on a handmade miniature set: visible fingerprints and tool marks in the clay, the water made of glossy sculpted clay ripples, the sky a painted backdrop.
 ```
 
-![Claymation: a plasticine fisherman on sculpted clay waves](media/3-clay.png)
+![Claymation: a plasticine fisherman on sculpted clay waves](media/3-clay.webp)
 :::
 
 :::step{label="Paper"}
@@ -74,7 +74,7 @@ Stop-motion claymation: a fisherman in a small boat on a lake at dawn. Everythin
 Paper cutout animation: a fisherman in a small boat on a lake at dawn. Everything is cut from layered colored paper: the waves are overlapping strips of paper, the sun is a paper circle, visible paper grain and torn edges, soft shadows between the layers.
 ```
 
-![Paper cutout: layered paper waves, mountains and a paper sun](media/4-paper.png)
+![Paper cutout: layered paper waves, mountains and a paper sun](media/4-paper.webp)
 :::
 ::::
 
@@ -102,7 +102,7 @@ Same material. We changed the character, the light and the colors.
 Stop-motion claymation: a round, cheerful fisherman with a big nose and a knitted hat sits in a small boat on a lake at dawn, pouring tea from a flask, a fish peeking out of a bucket beside him. Everything is sculpted from plasticine on a handmade miniature set: visible fingerprints in the clay, bright warm colors, soft golden light.
 ```
 
-![Cozy: a round, cheerful clay fisherman pouring tea](media/5-cozy.png)
+![Cozy: a round, cheerful clay fisherman pouring tea](media/5-cozy.webp)
 :::
 
 :::step{label="Creepy"}
@@ -110,7 +110,7 @@ Stop-motion claymation: a round, cheerful fisherman with a big nose and a knitte
 Stop-motion puppet animation: a tall, thin, pale fisherman with long spindly fingers stands motionless in a small boat on a black, perfectly still lake at night, staring down into the water. Handmade miniature set, puppet with fabric clothes and a carved face, cold moonlight, thin fog, muted grey-green colors, the water dark and glassy.
 ```
 
-![Creepy: a thin puppet fisherman staring into a black lake at night](media/5-creepy.png)
+![Creepy: a thin puppet fisherman staring into a black lake at night](media/5-creepy.webp)
 :::
 ::::
 
@@ -155,7 +155,7 @@ Every addition serves one idea: *a fairy tale about a man who fished the moon ou
 Silhouette paper cutout animation, like a 1920s shadow-puppet fairy tale: everything is cut from black paper with intricate lace-like detail, set against glowing layered backgrounds of tinted translucent paper, deep blue fading to amber at the horizon. A tiny fisherman stands in a curled little boat on a lake of rippling paper waves, pulling a net out of the water; caught in the net is a glowing crescent moon. The sky above him is empty, no moon. Visible paper texture, delicate cut edges, soft light glowing through the paper layers.
 ```
 
-![Director's cut: a black paper silhouette of a fisherman pulling a glowing moon out of the lake in his net](media/6-directors-cut.png)
+![Director's cut: a black paper silhouette of a fisherman pulling a glowing moon out of the lake in his net](media/6-directors-cut.webp)
 
 What each addition does:
 
@@ -166,7 +166,7 @@ What each addition does:
 
 ## Where this is heading
 
-<!-- TODO: video teaser, image-to-video from media/6-directors-cut.png. Idea: paper layers moving like shadow puppets (no smooth 3D camera), the waves sliding sideways in flat layers, the man hauling the net up, the moon glowing brighter as it rises out of the water. Ask for stop-motion timing (on twos) so it doesn't come out smooth like CGI. Generate after the still is approved. -->
+<!-- TODO: video teaser, image-to-video from media/6-directors-cut.webp. Idea: paper layers moving like shadow puppets (no smooth 3D camera), the waves sliding sideways in flat layers, the man hauling the net up, the moon glowing brighter as it rises out of the water. Ask for stop-motion timing (on twos) so it doesn't come out smooth like CGI. Generate after the still is approved. -->
 
 In a still, you see what it's made of. In a video, the material moves its own way: paper slides in flat layers, clay twitches a little between frames. That's where handmade animation gets its charm.
 

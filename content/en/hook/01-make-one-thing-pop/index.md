@@ -106,7 +106,7 @@ Here's what happens when you keep going. Every extra detail below serves the sam
 Candid black-and-white street photograph on 35mm film, visible grain, with selective color: a woman with long dark hair in a bright red dress walks calmly toward the camera, carrying an antique white birdcage by its ring at her side, the cage empty and its little door hanging open, her hair and dress moving in the wind, against the flow of a dense crowd of men in identical dark suits with briefcases hurrying away from us. She is the only one looking into the lens. The red dress is the only color in the frame.
 ```
 
-![Director's cut: the woman with the empty birdcage](media/4-directors-cut.png)
+![Director's cut: the woman with the empty birdcage](media/4-directors-cut.webp)
 
 What each addition does:
 

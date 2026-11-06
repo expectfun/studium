@@ -46,7 +46,7 @@ Click the image to step through, or pick a frame below. Only the prompt changes.
 A woman standing on a pier.
 ```
 
-![The default: a young, pretty woman smiling over her shoulder on a pier](media/1-lazy.png)
+![The default: a young, pretty woman smiling over her shoulder on a pier](media/1-lazy.webp)
 :::
 
 :::step{label="Adjectives"}
@@ -54,7 +54,7 @@ A woman standing on a pier.
 A beautiful, mysterious, wise old woman with an interesting face, standing on a pier.
 ```
 
-![Adjectives: a long-haired old woman in beads and a dark cloak, a lantern and an old ship behind her](media/2-adjectives.png)
+![Adjectives: a long-haired old woman in beads and a dark cloak, a lantern and an old ship behind her](media/2-adjectives.webp)
 :::
 
 :::step{label="Details"}
@@ -62,7 +62,7 @@ A beautiful, mysterious, wise old woman with an interesting face, standing on a 
 A 70-year-old fisherwoman standing on a wooden pier, in a yellow oilskin coat and rubber boots, a coil of wet rope over her shoulder, her hands red and cracked from salt and cold.
 ```
 
-![Details: a fisherwoman in a yellow oilskin coat with a coil of rope, red, cracked hands](media/3-details.png)
+![Details: a fisherwoman in a yellow oilskin coat with a coil of rope, red, cracked hands](media/3-details.webp)
 :::
 
 :::step{label="History"}
@@ -70,7 +70,7 @@ A 70-year-old fisherwoman standing on a wooden pier, in a yellow oilskin coat an
 A 70-year-old fisherwoman standing on a wooden pier, in a yellow oilskin coat and rubber boots, a coil of wet rope over her shoulder, her hands red and cracked from salt and cold. The coat is patched at both elbows with mismatched fabric, a thin gold wedding ring is worn almost flat on her finger, and her small wooden boat is tied up behind her.
 ```
 
-![History: the same fisherwoman, a patch on her elbow, a worn wedding ring, her small boat behind her](media/4-history.png)
+![History: the same fisherwoman, a patch on her elbow, a worn wedding ring, her small boat behind her](media/4-history.webp)
 :::
 ::::
 
@@ -122,7 +122,7 @@ Every addition serves one idea: *she still goes out every morning, and she still
 Film still on 35mm, visible grain, cold grey dawn, thin fog over the harbor. A 70-year-old fisherwoman sits alone on an upturned crate on a wooden pier, mending a fishing net spread across her knees. Yellow oilskin coat patched at both elbows with mismatched fabric, hands red and cracked from salt. She wears her own thin gold wedding ring, and a man's wider ring hangs on a string around her neck. Beside her on the planks: an old thermos and two tin cups, one filled and steaming, the other clean and empty. Behind her, her small wooden fishing boat, a man's name hand-painted on the bow: TOMÁS. She isn't looking at the camera; she looks out at the sea.
 ```
 
-![Director's cut: an old fisherwoman mending a net on a pier, two tin cups beside her, a boat named TOMÁS](media/5-directors-cut.png)
+![Director's cut: an old fisherwoman mending a net on a pier, two tin cups beside her, a boat named TOMÁS](media/5-directors-cut.webp)
 
 What each addition does:
 
@@ -134,7 +134,7 @@ What each addition does:
 
 ## Where this is heading
 
-<!-- TODO: video teaser, image-to-video from media/5-directors-cut.png. Idea: static camera; her hands keep mending the net; steam rises from the full cup; she pauses, glances at the empty cup, then back at the sea. The fog drifts. Generate after the still is approved. -->
+<!-- TODO: video teaser, image-to-video from media/5-directors-cut.webp. Idea: static camera; her hands keep mending the net; steam rises from the full cup; she pauses, glances at the empty cup, then back at the sea. The fog drifts. Generate after the still is approved. -->
 
 In a still, the details tell the story. In a video, you can choose the moment she glances at the empty cup.
 

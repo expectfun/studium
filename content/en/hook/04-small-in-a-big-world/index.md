@@ -45,7 +45,7 @@ Click the image to step through, or pick a frame below. Only the prompt changes.
 A man walking through the desert.
 ```
 
-![The default: an adventurer in a medium shot](media/1-lazy.png)
+![The default: an adventurer in a medium shot](media/1-lazy.webp)
 :::
 
 :::step{label="Extreme wide"}
@@ -53,7 +53,7 @@ A man walking through the desert.
 Extreme wide shot of a man walking through the desert: he is a tiny figure near the bottom of the frame, and empty sand and sky fill almost everything else.
 ```
 
-![Extreme wide shot: a tiny figure in an empty desert](media/2-extreme-wide.png)
+![Extreme wide shot: a tiny figure in an empty desert](media/2-extreme-wide.webp)
 :::
 
 :::step{label="Scale reference"}
@@ -61,7 +61,7 @@ Extreme wide shot of a man walking through the desert: he is a tiny figure near 
 Extreme wide shot of a man walking through the desert under a clear sky: he is a tiny figure near the bottom of the frame. Beside him, an enormous ancient stone monolith rises out of the sand, hundreds of times his height, reaching almost to the top of the frame.
 ```
 
-![A tiny man at the foot of an enormous monolith](media/3-colossal-v2.png)
+![A tiny man at the foot of an enormous monolith](media/3-colossal-v2.webp)
 :::
 ::::
 
@@ -80,7 +80,7 @@ Extreme wide shot of a man walking through the desert under a clear sky: he is a
 
 In our first attempt, we wrote that the monolith's top was "fading into the haze". The AI didn't just add haze at the top. It filled the whole sky with it:
 
-![Our first attempt: the haze took over the whole frame](media/3-colossal.png)
+![Our first attempt: the haze took over the whole frame](media/3-colossal.webp)
 
 We didn't ask for that, and it changed two things at once. But look: the haze hides where the tower ends, so it feels endless. Sometimes the "mistake" is the better picture. You decide.
 
@@ -111,7 +111,7 @@ Every addition serves one idea: *a lone traveler, and a mystery far bigger than 
 Film still on 35mm, visible grain, warm hazy morning light. Extreme wide shot: a tiny lone figure in a long dark coat walks along the crest of a dune toward the rusted hull of a colossal ocean ship stranded in the middle of the desert, half-buried in sand, hundreds of times his height, its bow fading into the haze. A single line of footprints trails behind him across the dunes. Wind lifts a thin veil of sand off the crest. No sea anywhere in sight. The figure is the only living thing in the frame.
 ```
 
-![Director's cut: a lone figure walking toward a ship stranded in the desert](media/4-directors-cut.png)
+![Director's cut: a lone figure walking toward a ship stranded in the desert](media/4-directors-cut.webp)
 
 What each addition does:
 

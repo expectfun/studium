@@ -40,7 +40,7 @@ Click the image to step through, or pick a frame below. Only the prompt changes.
 A man sitting at a desk in his office, facing the camera.
 ```
 
-![The default: a bright, friendly office portrait](media/1-lazy.png)
+![The default: a bright, friendly office portrait](media/1-lazy.webp)
 :::
 
 :::step{label="Top light"}
@@ -48,7 +48,7 @@ A man sitting at a desk in his office, facing the camera.
 A man sitting at a desk in his office, facing the camera, lit by a hard light from directly overhead, the source out of frame.
 ```
 
-![Hard light from above: shadows under the brow](media/2-top-light.png)
+![Hard light from above: shadows under the brow](media/2-top-light.webp)
 :::
 
 :::step{label="Low-key"}
@@ -56,7 +56,7 @@ A man sitting at a desk in his office, facing the camera, lit by a hard light fr
 A man sitting at a desk in a dark office, facing the camera, lit by a single hard light from directly overhead, the source out of frame. Low-key lighting: the room falls into deep shadow and his eyes are hidden in the shadow of his brow.
 ```
 
-![Low-key: the room is gone, his eyes are in shadow](media/3-low-key.png)
+![Low-key: the room is gone, his eyes are in shadow](media/3-low-key.webp)
 :::
 ::::
 
@@ -74,7 +74,7 @@ Notice something we didn't ask for: **he stopped smiling.** The AI read "hard li
 
 Here's the same light again. We changed one thing: he's looking down at his papers.
 
-![Same low-key light, but he's bent over his papers](media/3b-looking-down.png)
+![Same low-key light, but he's bent over his papers](media/3b-looking-down.webp)
 
 He's not dangerous anymore. He's tired and alone, working late.
 
@@ -109,7 +109,7 @@ Here's our take: not a copy of the film, but the same principle pushed further. 
 Film still on 35mm, heavy grain, warm amber tones. Low-key lighting: a single hard light from directly overhead, the source out of frame, on a middle-aged man in a dark suit sitting behind a heavy wooden desk in a dark, wood-paneled office, facing the camera. His eyes are hidden in the deep shadow of his brow; his face is unreadable. His hands are folded on the desk, fully lit. Low angle, the camera slightly below his eye level, so he looms over us. In the foreground, the back of an empty chair faces him across the desk, in silhouette. Everything outside the pool of light falls into near-black.
 ```
 
-![Director's cut: the man behind the desk, eyes in shadow, an empty chair in front](media/4-directors-cut.png)
+![Director's cut: the man behind the desk, eyes in shadow, an empty chair in front](media/4-directors-cut.webp)
 
 What each addition does:
 

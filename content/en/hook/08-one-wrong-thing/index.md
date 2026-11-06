@@ -45,7 +45,7 @@ Click the image to step through, or pick a frame below. Only the prompt changes.
 A surreal dreamlike city.
 ```
 
-![The default: floating castles, staircases into clouds, a giant eye, a gramophone, everything at once](media/1-lazy.png)
+![The default: floating castles, staircases into clouds, a giant eye, a gramophone, everything at once](media/1-lazy.webp)
 :::
 
 :::step{label="One thing"}
@@ -53,7 +53,7 @@ A surreal dreamlike city.
 A realistic photograph of an ordinary city street on a rainy morning: people with umbrellas wait at a crosswalk, cars, wet asphalt, grey sky. Everything is completely normal except one impossible thing: the raindrops hang frozen in mid-air all over the street, motionless, like millions of tiny glass beads.
 ```
 
-![One thing: an ordinary rainy crosswalk, the raindrops frozen in mid-air](media/2-frozen.png)
+![One thing: an ordinary rainy crosswalk, the raindrops frozen in mid-air](media/2-frozen.webp)
 :::
 
 :::step{label="Meaning"}
@@ -61,7 +61,7 @@ A realistic photograph of an ordinary city street on a rainy morning: people wit
 A realistic photograph of an ordinary city street on a rainy morning: people with umbrellas wait at a crosswalk, cars, wet asphalt, grey sky, and the rain pours down on all of them as usual. Everything is completely normal except one impossible thing: in a small circle around one young woman standing still in the middle of the crowd without an umbrella, holding an opened letter, the raindrops hang frozen in mid-air, motionless, like tiny glass beads. Outside that circle, the rain keeps falling.
 ```
 
-![Meaning: the rain falls on everyone, but around one woman reading a letter, it has stopped in mid-air](media/3-frozen-her.png)
+![Meaning: the rain falls on everyone, but around one woman reading a letter, it has stopped in mid-air](media/3-frozen-her.webp)
 :::
 ::::
 
@@ -88,7 +88,7 @@ Same impossible thing: a boulder the size of a house, floating in the air. We ch
 A realistic photograph: a huge grey boulder, the size of a house, floats motionless a few meters above a green meadow at golden hour. Children stand below it, laughing and pointing up, one of them reaching out a hand. Warm sunlight, wildflowers, a kite in the sky.
 ```
 
-![Wonder: children point up at a floating boulder in a sunny meadow](media/4-wonder.png)
+![Wonder: children point up at a floating boulder in a sunny meadow](media/4-wonder.webp)
 :::
 
 :::step{label="Dread"}
@@ -96,7 +96,7 @@ A realistic photograph: a huge grey boulder, the size of a house, floats motionl
 A realistic photograph: a huge grey boulder, the size of a house, floats motionless above the roofs of a small town at dusk. Its shadow falls across the houses. People hurry indoors, a woman pulls a child by the hand, shutters are being closed. Cold blue light, a single streetlight flickering on.
 ```
 
-![Dread: a boulder hangs over a small town at dusk, people hurrying indoors](media/4-dread.png)
+![Dread: a boulder hangs over a small town at dusk, people hurrying indoors](media/4-dread.webp)
 :::
 ::::
 
@@ -108,7 +108,7 @@ In the meadow, it's a miracle. Over the town, it's a threat. The rock didn't cha
 
 Our first idea for step 2 was different: *the rain falls upward*, from the street back into the sky. Here's what we got:
 
-![Our first attempt: we asked for upward rain, and got an ordinary rainy street](media/2-upward.png)
+![Our first attempt: we asked for upward rain, and got an ordinary rainy street](media/2-upward.webp)
 
 Just a rainy street. The AI wasn't wrong, exactly. In a single photo, rain falling *up* looks the same as rain falling down. Drops are drops. You can't see direction in a still.
 
@@ -141,7 +141,7 @@ Every addition serves one idea: *the moment he lets go of a life he never wanted
 Film still on 35mm, visible grain, overcast morning. A dense crowd of commuters in dark coats hurries along a city sidewalk, heads down, looking at their phones. In the middle, one man in a grey suit has stopped walking. His briefcase hangs open at his side, and the sheets of paper inside are turning into white birds as they rise: near the case they are still flat pages, higher up they grow wings, and above the crowd they fly away as a flock. He watches them go with a small smile. No one else looks up.
 ```
 
-![Director's cut: in a crowd staring at phones, one man's briefcase lets out a flock of paper birds](media/5-directors-cut.png)
+![Director's cut: in a crowd staring at phones, one man's briefcase lets out a flock of paper birds](media/5-directors-cut.webp)
 
 What each addition does:
 
@@ -155,7 +155,7 @@ Remember the empty birdcage in lesson 1? This is where the bird went.
 
 ## Where this is heading
 
-<!-- TODO: video teaser, image-to-video from media/5-directors-cut.png. Idea: the crowd keeps hurrying past; he stands still; the pages lift out of the case one by one, fold into wings and fly up, the flock rising over the street. No one else looks up. Generate after the still is approved. -->
+<!-- TODO: video teaser, image-to-video from media/5-directors-cut.webp. Idea: the crowd keeps hurrying past; he stands still; the pages lift out of the case one by one, fold into wings and fly up, the flock rising over the street. No one else looks up. Generate after the still is approved. -->
 
 In a still, you see the pages halfway between paper and bird. In a video, you can watch them change. And the impossible things that don't show in a still, like rain falling up, become possible again.
 
